@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+        .m1.m2 {
+            color: blue
+        }
+
+        .c1 .c2 {
+            color: blue;
+        }
+
+        /* immidiate parent child selector */
+        .c1>c2 {}
+
+        /* attribute selector */
+        input[value="Select me"] {
+            background-color: blue;
+        }
+
+        .some-class #the-one > .c1.c2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Select the element select me 
+        and make them blue -->
+    <!-- <div class="m1 m2">
+        Select me
+    </div>
+
+    <div class="m1">Not me</div>
+    <div class="m2">Not me either</div> -->
+
+
+    <!-- Select "I'm here. find me" and make it blue  -->
+    <!-- <div class = "c1">
+        <div>
+            <div>
+                <span>
+                    <div class = "c2">I'm here. find me</div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <span>
+        <div class = "c2">Dont select me</div>
+    </span> -->
+
+
+    <!-- Select the input element with the value
+         "Select Me" and 
+        make its background blue  -->
+    <form>
+        <input type="button" value="Click Me">
+        <input type="button" value="Select me">
+        <!-- <div name = "something">Hello</div> -->
+    </form>
+
+    <form>
+        Name:
+        <input type="text">
+        <input type="button" value="Click Me">
+    </form>
+
+
+    <!-- Select the element with "Select me" 
+        and make it blue  -->
+    <div class="some-class" >
+        <div id="the-one">
+            <p>Random</p>
+            <div>
+                <p class="c1 c2">Random</p>
+            </div>
+            <p class="c1 c2">Select me</p>
+            <div class="c1 c2">Select me</div>
+        </div>
+    </div>
+    <div class="some-class">
+        <p class="c1">Random</p>
+        <p class="c2">Random</p>
+        <p class="c1 c2">Random</p>
+    </div>
+
+
+    <h1>asdsad</h1>
+</body>
+
+</html>
