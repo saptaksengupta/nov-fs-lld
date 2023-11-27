@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: blueviolet;
+            padding: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; /*main*/
+            align-items: center; /*cross*/
+            flex-wrap: wrap;
+        }
+
+        .container-col {
+            background-color: blueviolet;
+            margin-top: 100px;
+            padding: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .box1 {
+            flex: 2;
+        }
+
+        .box2 {
+            flex: 2;
+        }
+
+        .box3 {
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box1" style="background-color: yellow;">Box1</div>
+        <div class="box2" style="background-color: rgb(126, 126, 20);">Box2</div>
+        <div class="box3" style="background-color: rgb(227, 227, 40);">Box3</div>
+    </div>
+
+    <div class="container-col">
+        <div style="background-color: yellow;">Box1</div>
+        <div style="background-color: rgb(126, 126, 20);">Box2</div>
+        <div style="background-color: rgb(227, 227, 40);">Box3</div>
+        <div style="background-color: rgb(126, 126, 20);">Box2</div>
+        <div style="background-color: rgb(227, 227, 40);">Box3</div>
+    </div>
+    
+</body>
+</html>
