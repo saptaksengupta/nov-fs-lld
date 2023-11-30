@@ -1,0 +1,63 @@
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .603), rgba(0, 0, 0, .849)), url(../assets/headerbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    height: 80vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nav-line {
+    font-size: 120%;
+    margin-top: 1.1rem;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid transparent;
+    list-style: none;
+}
+
+.white-anchor {
+    color: white;
+}
+
+.showcase {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.main-heading {
+
+    color: white;
+    font-size: 350%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.colored-txt {
+    color: #f63854;
+    font-weight: bold;
+}
+
+.btns {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+
+.features, 
+.how-to {
+    min-height: 300px;
+}
+

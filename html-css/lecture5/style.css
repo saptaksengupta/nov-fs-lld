@@ -1,0 +1,20 @@
+
+/* Default one for mobile */
+
+.container {
+    background-color: blue;   
+}
+
+
+/* It means screen size is bigger than 420px */
+@media screen and (min-width: 420px) { 
+    /* if this condition matches */
+    .container {
+        background-color: red;
+        font-size: 30px;
+    }
+}
+
+/* Mobile first approach */
+/* My defauilt style and layout will be for mobile. 
+and conditions will be for desktop or bigger devices */
