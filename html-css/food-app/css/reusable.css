@@ -10,6 +10,10 @@
     transition: transform 0.3s, color 0.3s, background-color 0.3s;
 }
 
+html {
+    font-size: 30px;
+}
+
 .btn:hover {
     transform: scale(1.2);
 }

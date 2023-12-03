@@ -1,0 +1,7 @@
+@media only screen and (min-width:600px) { 
+    .howto-container {
+        flex-direction: row;
+        font-size: 1rem;
+    }
+    /* TODO: Manage responsiveness of steps container */
+}

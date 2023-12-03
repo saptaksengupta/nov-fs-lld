@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden-image {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .visibile-image {
+            opacity: 1;
+        }
+
+    </style>
+
+    <script>
+
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelector('.hidden-image').classList.add('visibile-image');
+            }, 2000);
+        });
+
+    </script>
+</head>
+<body>
+    <h1>Wibsite with Cumulative layout shift</h1>
+
+    <img src="https://source.unsplash.com/random/300" alt = "Example Image" height="600" class="hidden-image">
+
+    <div class = "shifting-element">
+        <h1>This text appears without layout shift.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, delectus quis incidunt itaque hic nam voluptate exercitationem in sequi esse expedita ipsum minus et officiis vel, sint odio laudantium est.
+        </h1>
+    </div>
+
+</body>
+</html>

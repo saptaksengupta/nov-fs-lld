@@ -61,3 +61,60 @@ header {
     min-height: 300px;
 }
 
+.how-to {
+    background-color: rgb(244, 244, 244);
+}
+
+.howto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+}
+
+.image-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.iphone-image {
+    width: 60%;
+}
+
+.steps-container {
+    width: 85%;
+}
+
+.step-container {
+    height: 25%;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.step-val {
+    color: #f63854;
+    height: 4rem;
+    width: 4rem;
+    border-color: #f63854;
+    text-align: center;
+    border-radius: 50%;
+    border-style: solid;
+    font-size: 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howto-para {
+    padding-left: 1rem;
+    color: gray;
+}
+
+
+
