@@ -5,12 +5,13 @@ var a = 10;
 function fn() {
     console.log("I am fn!");
     function inner() {
+        var inm = 109;
         console.log("I am inner!"); 
     }
     inner();
 }
 
-fn();
+fn(); // invoking -> get call stack entry 
 
 // var a = 10;
 // console.log(a);
