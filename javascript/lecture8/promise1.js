@@ -3,12 +3,12 @@ const fs = require("fs");
 console.log("before");
 // fs.readFile()
 // const promise = fs.promises.readFile("./f1.txt");
-// console.log(promise);
+// console.log(promise); // pending state
 // console.log("after");
 
 // setTimeout(() => {
 //     console.log("I am after the file read");
-//     console.log(promise);
+//     console.log(promise); // fullfilled
 // }, 3000);
 
 
