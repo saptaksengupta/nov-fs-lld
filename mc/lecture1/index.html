@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class = "hifine"> I am h1</h1>
+    <h1> I am another</h1>
+    <h2> I am h1</h2>
+    <h3> I am h1</h3>
+    <p class = "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore adipisci dignissimos
+        voluptatibus ad
+        debitis vel natus nobis? Doloribus fugit vitae veritatis esse! Cumque odio quasi sapiente quisquam est! Odio!
+    </p>
+    <!-- <p class = "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore adipisci dignissimos
+        voluptatibus ad
+        debitis vel natus nobis? Doloribus fugit vitae veritatis esse! Cumque odio quasi sapiente quisquam est! Odio!
+    </p> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore adipisci dignissimos voluptatibus ad
+        debitis vel natus nobis? Doloribus fugit vitae veritatis esse! Cumque odio quasi sapiente quisquam est! Odio!
+    </p>
+
+    <input type="password" id="inp" />
+
+
+    <div>
+        <div class="d1">I am inside inner div</div>
+        <div>I am inside the div</div>
+    </div>
+
+    <script>
+        const h1 = document.querySelector('h1'); // first one 
+        // console.log(h1);
+
+        const h1List = document.querySelectorAll(".para"); // h1 nodelist
+        console.log(h1List);
+
+        const h1Arr = Array.from(h1List);
+        // console.log(h1Arr);
+
+
+        h1List.forEach((elem) => {
+            console.log(elem);
+        })
+
+        console.log(h1List[0]);
+
+        // by class name
+        const h1ByCls = document.getElementsByClassName("para");
+        console.log(h1ByCls);
+
+
+        const pass = document.querySelector("input[type='password']");
+        console.log(pass);
+
+        let div = document.querySelector("div");
+        console.log("InnerHtml", div.innerHTML);
+        console.log("InnerText", div.innerText);
+        console.log("TextContent", div.textContent); // it does not care if the div is headen.
+
+
+        // change style using JS
+        div.style.backgroundColor = "red";
+        div.style.color = 'white';
+
+        // Modifying attribute.
+        let inpt = document.getElementById("inp");
+        console.log(inpt.getAttribute("type"));
+        inpt.setAttribute("type", "email");
+
+
+</script>
+    
+</body>
+</html>
