@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <button class="btn">Click Me!</button>
+    </div>
+
+
+    <script>
+        let btn = document.querySelector(".btn");
+
+        // inline events 
+        // btn.onclick = function(){
+        //     alert("I am Clicked!"); // 
+        // };
+
+        // btn.onclick = function(){
+        //     alert("I am Clicked also!");
+        // };
+
+
+        // addEventListener
+        btn.addEventListener("click", function() {
+            console.log("I am clicked!");
+        });
+
+        btn.addEventListener("click", function() {
+            console.log("I am clicked too again!");
+        }, {once: true});
+    </script>
+
+</body>
+</html>

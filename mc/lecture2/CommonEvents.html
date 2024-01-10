@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">Click me</div>
+
+    <input type="text" />
+
+    <script>
+        let box = document.querySelector(".box");
+
+        // box.addEventListener("mouseover", () => {
+        //     console.log("Hover occured!");
+        // });
+
+        // box.addEventListener("mouseleave", function(){
+        //     console.log("mouseleave occured!");
+        // });
+
+        // mouseup + mousedown = click
+        box.addEventListener("mousedown", function(){
+            console.log("MouseDown occured!");
+        });
+
+        box.addEventListener("mouseup", function(){
+            console.log("Mouseup occured!");
+        });
+
+        box.addEventListener("dblclick", function() {
+            console.log("Double click occured!");
+        });
+
+        // Keyboard events;
+        let input = document.querySelector("input");
+        input.addEventListener("keydown", () => {
+            console.log("key down called!");
+        });
+
+        input.addEventListener("keyup", () => {
+            console.log("Key up called!");
+        });
+
+        input.addEventListener("keypress", (event) => {
+            console.log("Keypress called");
+            console.log(event); 
+            console.log(event.code); 
+        })
+        
+    </script>
+</body>
+</html>
