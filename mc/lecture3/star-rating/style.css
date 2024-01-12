@@ -1,0 +1,15 @@
+
+
+.star-rating-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.star {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.yellow {
+    color: rgb(178, 237, 59);
+}
