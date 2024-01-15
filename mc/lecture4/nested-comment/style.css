@@ -1,0 +1,35 @@
+html {
+   box-sizing: border-box;
+   font-family: sans-serif; 
+}
+
+html,
+body {
+    margin: 0;
+    bottom: 0;
+}
+
+.comment-container {
+    margin-left: 1rem;
+    padding-left:1rem;
+    border-left: 1px solid black;
+}
+
+
+.reply {
+    background-color: pink;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.comment-reply-container {
+    margin: 1rem;
+}
+
+.btn-submit {
+    margin-left: 5px;
+    cursor: pointer;
+}
