@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+#search-input {
+    height: 60px;
+    width: 400px;
+    font-size: 2rem;
+}
+
+.sugg-cont {
+    display: flex;
+    justify-content: center;
+}
+
+#suggestion-box {
+    list-style: none;
+    width: 400px;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+#suggestion-box li {
+    height: 60px;
+    /* padding: 5px; */
+    font-size: 1.2rem;
+    background-color: lightsalmon;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.visible {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

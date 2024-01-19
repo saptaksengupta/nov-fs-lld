@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- 
+    # Problem Statement
+
+    Must Have 
+    * On typing inside the search box , it should suggest related terms
+    *  use this api point to fetch the data : 
+    https://restcountries.com/v3.1/name/{name}
+
+    Good to have 
+    * Making it peformant
+            * it should avoid unnecessary network call
+    * it should persist previously fetched data
+    *  user should be able to select one of the options
+    * Making our component generic
+    -->
+
+
+    <!-- 
+        1. Build search box
+        2. Fetch data based on search
+        3. Transform data 
+        4. render as suggestions.
+    -->
+
+    <div class="container">
+        <h2>Auto Complete</h2>
+        <input type="search" id="search-input" />
+        <div class="sugg-cont">
+            <ul id="suggestion-box" class="hide">
+                <!-- <li>India</li>
+                <li>India</li>
+                <li>India</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="./debounce.js" type="module"></script>
+    <script src="./script.js" type="module"></script>
+    
+</body>
+</html>
