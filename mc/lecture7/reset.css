@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
