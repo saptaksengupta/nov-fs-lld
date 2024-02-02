@@ -4,6 +4,8 @@ import {ComponentOne} from './ComponentOne';
 import ListComp from './ListComp';
 import Counter from './Counter';
 import TodoApp from './TodoApp/TodoApp';
+import EffectExample from './EffectExample';
+import FetchData from './FetchData';
 
 function App() {
   return (
@@ -24,7 +26,11 @@ function App() {
 
        <Counter initialCount={0}/> */}
 
-       <TodoApp />
+       {/* <TodoApp /> */}
+
+       <EffectExample />
+
+       {/* <FetchData /> */}
        
     </div>
   );
