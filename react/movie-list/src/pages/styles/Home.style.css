@@ -1,0 +1,5 @@
+.toolbarContainer {
+    display: flex;
+    padding: 15px;
+    gap: 3em;
+}
