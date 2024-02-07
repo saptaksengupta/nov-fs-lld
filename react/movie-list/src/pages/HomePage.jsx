@@ -10,6 +10,17 @@ import MovieList from '../components/MovieList';
 export default function HomePage() {
 
   const [allMovies, setAllMovies] = useState(null); 
+  const [searchKeyword, setSearchKeyword] = useState(null);
+  const [language, setLanguage] = useState(null);
+
+  const onSearchKeywordChange = (searchValue) => {
+    setSearchKeyword(searchValue);
+  }
+
+  const onLangChange = (value) => {
+    setLanguage(value);
+  }
+
 
   useEffect(() => {
     MovieApiService.fetchMovies().then(resp => {
@@ -19,14 +30,16 @@ export default function HomePage() {
     });
   });
 
+
+
   return (
     <div>
       <NavigationBar />
       <div className='toolbarContainer'>
-        <SearchBar />
-        <ChooseLanguage />
+        <SearchBar onSearch={onSearchKeywordChange} />
+        <ChooseLanguage onLanguageChange={onLangChange} />
       </div>
-      {(allMovies !== null) ? (<MovieList allMovies={allMovies}/>): null}
+      {(allMovies !== null) ? (<MovieList searchKeyword={searchKeyword} language={language} allMovies={allMovies}/>): null}
     </div>
   )
 }
