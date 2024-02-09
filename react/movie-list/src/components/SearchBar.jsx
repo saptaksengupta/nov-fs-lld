@@ -6,7 +6,7 @@ export default function SearchBar({onSearch}) {
     const onSearchInput = (e) => {
         const searchValue = e.target.value;
         if (onSearch && searchValue !== null) {
-            onSearch(searchValue);
+            onSearch(searchValue); //??
         }
     }
 

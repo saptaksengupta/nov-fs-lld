@@ -1,0 +1,54 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.navbar-dark {
+    background-color: rgb(49, 49, 51);
+}
+
+.navbar-light {
+    background-color: rgb(89, 89, 237);
+}
+
+.btn {
+    background-color: rgb(209, 154, 52);
+    color: black;
+    border: none;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+}
+
+.product-container {
+    padding: 0 1em;
+}
+
+.product-description {
+    padding: 1em;
+    background-color: whitesmoke;
+    margin-top: 1em;
+}
+
+.product-dark {
+    background-color: rgb(69, 64, 64);
+    color: whitesmoke;
+}
+
+.product-light {
+    background-color: whitesmoke;
+}
+
+.btn-dark {
+    background-color: beige;
+    color: black;
+}
+
+.btn-light {
+    background-color: rgb(209, 154, 52);
+    color: white;
+}
