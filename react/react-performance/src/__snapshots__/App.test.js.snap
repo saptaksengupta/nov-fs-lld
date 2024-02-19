@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jest Snapshot testing suite Matches DOM Snapshot 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <p>
+      Hello, a test implementation
+    </p>
+    <div>
+      Hello world!!!
+    </div>
+    <div>
+      One more div
+    </div>
+  </div>
+</div>
+`;
