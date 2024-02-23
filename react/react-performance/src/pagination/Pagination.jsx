@@ -52,7 +52,9 @@ export default function Pagination(props) {
                     return (
                         <li className={classnames('pagination-item', {
                             selected: pageNumber === currentPage
-                        })}>{pageNumber}</li>
+                        })}
+                        onClick={() => onPageChange(pageNumber)}
+                        >{pageNumber}</li>
                     )
                 })
             }
